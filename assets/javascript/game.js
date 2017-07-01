@@ -14,7 +14,7 @@ var imgArray = [
      "gemImage04.jpg"
 ];
 
-function numRandom () {
+function numRandom() {
     randomNumber = Math.floor((Math.random() * 120) + 19);
     $("#rndNumber").text(randomNumber);
 }
@@ -28,7 +28,7 @@ function reset() {
     clear();
     numRandom();
 };
-                
+
 var arr = [];
 
 //var numberOptions = [Math.floor((Math.random() * 12) + 1)];
@@ -56,10 +56,10 @@ for (var i = 0; i < arr.length; i++) {
     $("#images").append(gemImage);
 };
 
-$(".theImages1").attr("src", "/assets/images/gemImage01.jpg");
-$(".theImages2").attr("src", "/assets/images/gemImage02.jpg");
-$(".theImages3").attr("src", "/assets/images/gemImage03.png");
-$(".theImages4").attr("src", "/assets/images/gemImage04.jpg");
+$(".theImages1").attr("src", "assets/images/gemImage01.jpg");
+$(".theImages2").attr("src", "assets/images/gemImage02.jpg");
+$(".theImages3").attr("src", "assets/images/gemImage03.png");
+$(".theImages4").attr("src", "assets/images/gemImage04.jpg");
 
 
 //console.log(numberOptions);
@@ -80,13 +80,10 @@ $(".gems").on("click", function () {
         $("#wins").text("Wins: " + wins++);
         alert("You Win!");
         reset();
-        }
-    
-    else if (totalScore >= randomNumber) {
+    } else if (totalScore >= randomNumber) {
         $("#losses").text("Losses: " + losses++);
-        alert("You Lose!"); 
+        alert("You Lose!");
         reset();
     }
 
 });
-
