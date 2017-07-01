@@ -56,10 +56,10 @@ for (var i = 0; i < arr.length; i++) {
     $("#images").append(gemImage);
 };
 
-$(".theImages1").attr("src", "../assets/images/gemImage01.jpg");
-$(".theImages2").attr("src", "../assets/images/gemImage02.jpg");
-$(".theImages3").attr("src", "../assets/images/gemImage03.png");
-$(".theImages4").attr("src", "../assets/images/gemImage04.jpg");
+$(".theImages1").attr("src", "/assets/images/gemImage01.jpg");
+$(".theImages2").attr("src", "/assets/images/gemImage02.jpg");
+$(".theImages3").attr("src", "/assets/images/gemImage03.png");
+$(".theImages4").attr("src", "/assets/images/gemImage04.jpg");
 
 
 //console.log(numberOptions);
