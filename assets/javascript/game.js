@@ -80,7 +80,8 @@ $(".gems").on("click", function () {
         $("#wins").text("Wins: " + wins++);
         alert("You Win!");
         reset();
-    } else if (totalScore >= randomNumber) {
+    } 
+    else if (totalScore > randomNumber) {
         $("#losses").text("Losses: " + losses++);
         alert("You Lose!");
         reset();
