@@ -21,13 +21,15 @@ function numRandom() {
 numRandom();
 
 function clear() {
+   $(".gems").empty();
     $("#totalScore").empty();
+
 }
 
 function reset() {
     clear();
     numRandom();
-};
+}
 
 var arr = [];
 
@@ -80,11 +82,16 @@ $(".gems").on("click", function () {
         $("#wins").text("Wins: " + wins++);
         alert("You Win!");
         reset();
+        totalScore = 0;
     } 
     else if (totalScore > randomNumber) {
         $("#losses").text("Losses: " + losses++);
         alert("You Lose!");
         reset();
+        totalScore = 0;
     }
 
 });
+
+reset();
+
